@@ -56,6 +56,35 @@ body {
   font-size: 14px;
 }
 
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #181824;
+  font-size: 14px;
+  font-weight: 300;
+  transition: 300ms;
+}
+
+.input input:focus {
+  outline: none;
+  box-shadow: 0 1px 0 0 #6236ff;
+  border-color: #6236ff;
+}
+
 @media(min-width: 900px) {
   .sign-up-form {
     flex-direction: row;

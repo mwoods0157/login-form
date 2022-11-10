@@ -76,13 +76,27 @@ body {
   border-bottom: 1px solid #181824;
   font-size: 14px;
   font-weight: 300;
-  transition: 300ms;
+  transition: 300ms ease;
 }
 
 .input input:focus {
   outline: none;
   box-shadow: 0 1px 0 0 #6236ff;
   border-color: #6236ff;
+}
+
+.label {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 300ms ease;
+}
+
+.label label {
+  display: block;
+  font-size: 14px;
+  color: #b0b0b0;
 }
 
 @media(min-width: 900px) {

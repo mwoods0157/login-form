@@ -30,6 +30,32 @@ body {
   display: none;
 }
 
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form-heading img {
+  width: 50px;
+  height: auto;
+}
+
+.form-heading h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.form-heading p {
+  font-size: 14px;
+}
+
 @media(min-width: 900px) {
   .sign-up-form {
     flex-direction: row;
@@ -46,5 +72,14 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px 0 0 12px;
+  }
+
+  .form-heading h1 {
+    font-size: 32px;
+  }
+
+  .form-heading p {
+    font-size: 16px;
   }
 }

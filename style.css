@@ -99,6 +99,15 @@ body {
   color: #b0b0b0;
 }
 
+.input input:focus + .label {
+  transform: translateY(-27px);
+}
+
+.input input:focus + .label label {
+  font-weight: 500;
+  color: initial;
+}
+
 @media(min-width: 900px) {
   .sign-up-form {
     flex-direction: row;

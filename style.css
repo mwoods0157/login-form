@@ -75,7 +75,7 @@ body {
   border: none;
   border-bottom: 1px solid #181824;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 300; 
   transition: 300ms ease;
 }
 
@@ -99,11 +99,13 @@ body {
   color: #b0b0b0;
 }
 
-.input input:focus + .label {
+.input input:focus + .label,
+.input input:not(:placeholder-shown) + .label {
   transform: translateY(-27px);
 }
 
-.input input:focus + .label label {
+.input input:focus + .label label,
+.input input:not(:placeholder-shown) + .label label {
   font-weight: 500;
   color: initial;
 }
